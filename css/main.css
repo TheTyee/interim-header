@@ -242,7 +242,7 @@ header {
 
 
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width:720px){
 
     .mobile-toggle {
         height: 100px;
@@ -259,7 +259,18 @@ header {
     .primary ul li {
         width: 100%;
         clear:both;
+        height: 45px;
         display: block;
+        border-bottom: solid 1px white;
+    }
+
+    .primary ul li:hover ul, .primary ul li:hover ul li ul, .primary ul li ul li:hover  ul{
+        display: none;
+    }
+
+    .primary ul li ul {
+        position: relative;
+        z-index: 99999;
     }
     
 }
